@@ -126,6 +126,7 @@ h2 > span {
 }
 
 .company {
+  margin: 0 24px;
 }
 
 .company .logo {
@@ -133,9 +134,33 @@ h2 > span {
   width: 100px;
   height: 100px;
   border: solid 2px white;
+  margin: 0px auto;
+  display: block;
 }
 
 .company.current .logo {
   width: 150px;
   height: 150px;
+}
+
+.company .details {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.company .title {
+  font-size: 20px;
+}
+
+.company .years {
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+.company.current .title {
+  font-size: 22px;
+}
+
+.company.current .years {
+  font-size: 20px;
 }
