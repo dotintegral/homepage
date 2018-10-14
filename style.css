@@ -43,6 +43,30 @@ h2 > span {
   font-size: 24px;
 }
 
+
+h3 {
+  font-size: 24px;
+  margin: 0px;
+  margin-bottom: 12px;
+  padding: 0px;
+  line-height: 30px;
+}
+
+li {
+  margin: 6px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff7a00;
+
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff3300;
+}
+
 /* HOME */
 
 .home {
@@ -136,6 +160,7 @@ h2 > span {
   border: solid 2px white;
   margin: 0px auto;
   display: block;
+  background: white;
 }
 
 .company.current .logo {
@@ -163,4 +188,24 @@ h2 > span {
 
 .company.current .years {
   font-size: 20px;
+}
+
+/* SHARE */
+
+
+.share {
+  background-image: url("img/backgrounds/jan-kahanek-184675-unsplash.jpg");
+}
+
+.cols {
+  display: flex;
+}
+
+.col {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.share .company {
+  margin-bottom: 30px;
 }
