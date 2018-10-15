@@ -7,6 +7,14 @@ body {
   color: #555;
 }
 
+@media (max-width: 600px) {
+  html,
+  body {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
 section {
   min-height: 100vh;
   background-position: center;
@@ -80,6 +88,16 @@ a:hover {
   background: none;
 }
 
+@media (max-width: 600px) {
+  .welcome {
+    padding: 24px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 24px 0px;
+  }
+}
+
+
 .me {
   width: 300px;
   height: 300px;
@@ -90,6 +108,22 @@ a:hover {
   border: solid 3px white;
   position: absolute;
   box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+  .me {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .me {
+    width: 200px;
+    height: 200px;
+    position: static;
+    margin: 0 auto;
+  }
 }
 
 .welcomeBox {
@@ -106,6 +140,23 @@ a:hover {
   justify-content: space-evenly;
 }
 
+@media (max-width: 800px) {
+  .welcomeBox {
+    height: 200px;
+    margin-left: 100px;
+    padding-left: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .welcomeBox {
+    background: none;
+    height: 160px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+}
+
 .greetings {
 }
 
@@ -116,12 +167,25 @@ a:hover {
   justify-content: space-evenly;
 }
 
+@media (max-width: 600px) {
+  .contact {
+    width: 100%;
+  }
+}
+
 .contact img {
   flex: 1 0 auto;
   display: block;
   width: 10%;
   height: 10%;
   margin: 0 12px;
+}
+
+
+@media (max-width: 600px) {
+  .contact img {
+    margin: 0 3%;
+  }
 }
 
 .contact img:before {
@@ -149,8 +213,20 @@ a:hover {
   justify-content: space-evenly;
 }
 
+@media (max-width: 800px) {
+  .companies {
+    display: block;
+  }
+}
+
 .company {
   margin: 0 24px;
+}
+
+@media (max-width: 600px) {
+  .company {
+    margin-bottom: 12px;
+  }
 }
 
 .company .logo {
@@ -201,9 +277,21 @@ a:hover {
   display: flex;
 }
 
+@media (max-width: 600px) {
+  .cols {
+    display: block;
+  }
+}
+
 .col {
   flex-grow: 1;
   width: 50%;
+}
+
+@media (max-width: 600px) {
+  .col {
+    width: 100%;
+  }
 }
 
 .share .company {
