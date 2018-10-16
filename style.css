@@ -51,7 +51,6 @@ h2 > span {
   font-size: 24px;
 }
 
-
 h3 {
   font-size: 24px;
   margin: 0px;
@@ -96,7 +95,6 @@ a:hover {
     margin: 24px 0px;
   }
 }
-
 
 .me {
   width: 300px;
@@ -173,22 +171,44 @@ a:hover {
   }
 }
 
-.contact img {
+.contact a {
   flex: 1 0 auto;
   display: block;
   width: 10%;
-  height: 10%;
-  margin: 0 12px;
+  margin: 0 3%;
+  background-size: contain;
 }
 
+.contact a:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.contact a.ln {
+  background-image: url("img/icons/ln.png");
+}
+
+.contact a.gh {
+  background-image: url("img/icons/gh.png");
+}
+
+.contact a.fr {
+  background-image: url("img/icons/fr.png");
+}
+
+.contact a.md {
+  background-image: url("img/icons/md.png");
+}
+
+.contact a.tw {
+  background-image: url("img/icons/tw.png");
+}
 
 @media (max-width: 600px) {
-  .contact img {
+  .contact a {
     margin: 0 3%;
   }
-}
-
-.contact img:before {
 }
 
 .hello {
@@ -223,6 +243,15 @@ a:hover {
   margin: 0 24px;
 }
 
+@media (max-width: 800px) {
+  .company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+}
+
 @media (max-width: 600px) {
   .company {
     margin-bottom: 12px;
@@ -239,14 +268,42 @@ a:hover {
   background: white;
 }
 
+@media (max-width: 800px) {
+  .company .logo {
+    margin: 0;
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .company .logo {
+    width: 75px;
+    height: 75px;
+  }
+}
+
 .company.current .logo {
   width: 150px;
   height: 150px;
 }
 
+@media (max-width: 600px) {
+  .company.current .logo {
+    width: 75px;
+    height: 75px;
+  }
+}
+
 .company .details {
   margin-top: 18px;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .company .details {
+    width: 250px;
+    margin-top: 0px;
+  }
 }
 
 .company .title {
@@ -267,7 +324,6 @@ a:hover {
 }
 
 /* SHARE */
-
 
 .share {
   background-image: url("img/backgrounds/jan-kahanek-184675-unsplash.jpg");
